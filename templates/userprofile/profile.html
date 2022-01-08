@@ -1,0 +1,25 @@
+<html>
+{% load static %}
+<head>
+<title> User Profile</title>
+</head>
+<body>
+<h1>UserProfile</h1>
+    <table>
+        <tr>
+
+            <th>Name</th>
+        </tr>
+        <tr>
+            {% for stu in User_data %}
+
+                <td>{{stu.Name}}</td>
+
+        </tr>
+        {% endfor %}
+
+
+    </table>
+<!--<a href = '/create'><button type="button"> Add New user</button> </a>-->
+</body>
+</html>

@@ -1,0 +1,12 @@
+<html>
+
+{% load static %}
+<h1> Enter User Name</h1>
+<div>
+    <form method="POST">
+    {{form.as_p}}
+    {% csrf_token %}
+    <input type = "submit" value = "Play Game">
+    </form>
+</div>
+</html>

@@ -1,0 +1,15 @@
+<html>
+
+{% load static %}
+<h1> Play Game {{count}} </h1>
+<div>
+
+    <form  method='GET'>
+
+        {% csrf_token %}
+        <input type="submit" class="btn" value="Rock" name="Rock">
+        <input type="submit" class="btn" value="Paper" name="Paper">
+        <input type="submit" class="btn" value="Scissors" name="Scissors">
+    </form>
+</div>
+</html>
